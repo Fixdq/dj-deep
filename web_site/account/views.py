@@ -21,6 +21,7 @@ class DateTimeTestView(ListAPIView):
 
     def post(self, request, *args, **kwargs):
         Stu.objects.create(name='', stu_time=timezone.now())
+
         return Response('ok')
 
     def get(self, request, *args, **kwargs):
